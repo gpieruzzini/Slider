@@ -1,0 +1,87 @@
+*{background-color: black;}
+*{box-sizing: border-box;
+}
+
+.container_slider{
+    width: 90%;
+     max-width: 900px;
+     margin: auto;
+     box-shadow: 0 15px 50px;
+     position: relative;
+     overflow: hidden;
+
+}
+
+.slider{
+display: flex;
+width: 300%;
+height: 400px;
+margin-left: -100%;
+}
+
+.slider_section{
+width: 100%;
+}
+
+
+.slider_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
+
+.slider_btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.slider_btn:hover{
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.slider_btn_left{
+    left: 10px;
+
+}
+
+
+.slider_btn_right{
+    right: 10px;
+}
+
+/*
+Este slider lo conseguí en un tutorial de youtube y también me orienté con w3school.
+Funciona bien, pero no logro dar con la animación del deslizamiento de slide a slide
+Tal vez asignando un fade también a la class slider en el html? Probé agregandolo pero no me funcionó.
+
+    V
+    V
+    V
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+GRACIAS!!!!
+
+*/
+
+
